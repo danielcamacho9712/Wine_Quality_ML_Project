@@ -19,6 +19,6 @@ This is a set with the compilation of several chemicals parameters related with 
 Normally datasets can have two different problems, the first one missing and nan values:<br/>
 
 <div align="center">
-  <img src="Images/is_nan.png" alt="Screenshot" width="400">
-  <p><em>Figure 1: This is a sample footnote describing the image.</em></p>
+  <img src="Images/is_nan.png" alt="Screenshot" width="200">
 </div>
+  <p><em>Figure 1: This is a sample footnote describing the image.</em></p>
