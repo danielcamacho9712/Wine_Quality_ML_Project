@@ -15,3 +15,6 @@ This is a set with the compilation of several chemicals parameters related with 
 10- Alcohol grade<br/>
 
 ## 2. Data cleanning and preparation 
+
+Normally datasets can have two different problems, the first one missing and nan values:
+![Project Screenshot](images/is_nan.png)
