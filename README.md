@@ -16,5 +16,5 @@ This is a set with the compilation of several chemicals parameters related with 
 
 ## 2. Data cleanning and preparation 
 
-Normally datasets can have two different problems, the first one missing and nan values:
+Normally datasets can have two different problems, the first one missing and nan values:<br/>
 ![Project Screenshot](Images/is_nan.png)
