@@ -1,5 +1,8 @@
-# Wine_quality_Project
-This is a wine quality dataset and we will predict if the wine is a good quality wine or not, using chemical parameters like:<br/>
+# Wine Quality Project
+
+## 1. Introduction
+
+This is a set with the compilation of several chemicals parameters related with the wine quality. We are going to use this dataset to predict if the wine is a good quality wine or not, using parameters like:<br/>
 1- Fixed acidity<br/>
 2- Volatile acidity<br/>
 3- Citric acid concentration<br/>
@@ -11,3 +14,4 @@ This is a wine quality dataset and we will predict if the wine is a good quality
 9- Amont of sulphates<br/>
 10- Alcohol grade<br/>
 
+## 2. Data cleanning and preparation 
