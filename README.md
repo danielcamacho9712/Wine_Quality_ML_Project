@@ -21,11 +21,11 @@ The first thing that we checked in the dataset was if there was any missing or n
 <div align="center">
   <img src="Images/is_nan.png" alt="Screenshot" width="200">
 </div>
-  Figure 1: Every Nan values in the dataset.
+**Figure 1.** Every Nan values in the dataset.
 
 There wasn't nan values present in the dataset. After this we explore the data, to see if all the values were in a logical range:
 
 <div align="center">
   <img src="Images/data_exploration.png" alt="Screenshot1">
 </div>
-  Figure 2: Dataset column's histograms.
+**Figure 2.** Dataset column's histograms.
