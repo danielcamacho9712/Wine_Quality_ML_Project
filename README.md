@@ -146,5 +146,6 @@ forest_opt = RandomForestClassifier(**random_search.best_params_)
 <p><strong>Table 2.</strong> Optimized and non-optimized hyperparameters Random Forest performance
 
 ## 6. Conclusions
-
+ 
+ The model's performance is already strong even before hyperparameter tuning, and further tuning does not seem to enhance it. However, there are two possible approaches to potentially improve its performance. First, increasing the <strong>n_iter</strong> hyperparameter in the RandomizedSearchCV function may help explore a wider range of parameter combinations. Second, using <strong> GridSearchCV </strong>could identify the optimal hyperparameter combination, with the inconvinient that it is computationally more expensive.
 
