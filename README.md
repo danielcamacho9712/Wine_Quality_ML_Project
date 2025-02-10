@@ -147,5 +147,4 @@ forest_opt = RandomForestClassifier(**random_search.best_params_)
 
 ## 6. Conclusions
 
-## 7. Conclusions
 
