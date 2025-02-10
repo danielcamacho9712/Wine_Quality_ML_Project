@@ -56,4 +56,4 @@ A <strong>DecisionTreeClassifier</strong> was the model selected to train using 
 </div>
 <p><strong>Figure 3.</strong> Benchmark Model Performance
 
-This performance is really good for as a first approach but can be improved, using feature engineering.
+The DecisionTreeClassifier performed well in solving this classification problem. However, its performance can be further enhanced through feature engineering and by experimenting with other models that may better fit our data. 
