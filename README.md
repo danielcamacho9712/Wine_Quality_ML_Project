@@ -30,6 +30,8 @@ There wasn't nan values present in the dataset. After this we explore the data, 
 </div>
 <p><strong>Figure 2.</strong> Dataset column's histograms
 
+There wasn't any anomaly present in the features or the output classes in the dataset.<br/>
+
 We are addressing a classification problem, the desired output labels are bad quality wine that will be represented with a 0 value and good quality wine 
 that will be represented with a 1 value. Input features had different scales:<br/>
 1- Fixed acidity: <strong> 0<x<16 </strong></p>
@@ -37,8 +39,10 @@ that will be represented with a 1 value. Input features had different scales:<br
 3- Citric acid concentration: <strong> 0<x<1 </strong></p> 
 4- Residual sugar: <strong> 0<x<16 </strong></p>
 5- Amount of chlorides: <strong> 0<x<0.6 </strong></p>
-6- Total amount of sulfur dioxide: <p><strong> 0<x<75 </strong></p>
+6- Total amount of sulfur dioxide: <strong> 0<x<75 </strong></p>
 7- Solution density: <strong> 0<x<300 </strong></p>
 8- Solution pH: <strong> 2.6<x<4.2 </strong></p>
 9- Amont of sulphates: <strong> 0.25<x<2 </strong></p>
 10- Alcohol grade: <strong> 8<x<15.2 </strong></p>
+
+For this reason the features  <strong>[fixed acidity, residual sugar, free sulfur dioxide, total sulfur dioxide, alcohol]</strong> were scaled using min-max normalization, after this the original columns (without scaling) were dropped, because they were not needed for the model training.
