@@ -46,3 +46,12 @@ that will be represented with a 1 value. Input features had different scales:<br
 10- Alcohol grade: <strong> 8<x<15.2 </strong></p>
 
 For this reason the features  <strong>[fixed acidity, residual sugar, free sulfur dioxide, total sulfur dioxide, alcohol]</strong> were scaled using min-max normalization, after this the original columns (without scaling) were dropped, because they were not needed for the model training.
+
+## 3. Benchamark model
+
+A <strong>DecisionTreeClassifier</strong> was the model selected to train using the dataset. We import the model from the ML-library sklearn, after this we split the data into training and testing set, we set the size of the testing set using the hyperparameter <strong>test_size=0.2</strong>. The model was trained, accuracy metrics and a confusion matrix were used to determine the model's perfomance.
+
+<div align="center">
+  <img src="Images/benchmark_performance.png" alt="Screenshot2">
+</div>
+<p><strong>Figure 2.</strong> Benchmark Model Performance
