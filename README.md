@@ -74,6 +74,6 @@ After this selection process, the input features selected were <strong>[volatile
 In this section three models were selected to train and compare their perfomance based in <strong>accuracy, precision, recall and f1-score metrics</strong>. The models selected were <strong> Decision Tree, Random Forest and Gradient Boosting </strong>. In the next figure are shown the confusion matrix for these three models:
 
 <div align="center">
-  <img src="Images/3_models.png" alt="Screenshot4">
+  <img src="Images/3_models.png" alt="Screenshot4" width="150">
 </div>
 <p><strong>Figure 5.</strong> Confusion Matrices for the three selected models. 
