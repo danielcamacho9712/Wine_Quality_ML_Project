@@ -31,14 +31,14 @@ There wasn't nan values present in the dataset. After this we explore the data, 
 <p><strong>Figure 2.</strong> Dataset column's histograms
 
 We are addressing a classification problem, the desired output labels are bad quality wine that will be represented with a 0 value and good quality wine 
-that will be represented with a 1 value. Input features had different scales:
-1- 0<Fixed acidity<16 <br/>
-2- Volatile acidity<br/>
-3- Citric acid concentration<br/>
-4- Residual sugar<br/>
-5- Amount of chlorides<br/>
-6- Total amount of sulfur dioxide<br/>
-7- Solution density<br/>
-8- Solution pH<br/>
-9- Amont of sulphates<br/>
-10- Alcohol grade<br/>
+that will be represented with a 1 value. Input features had different scales:<br/>
+1- Fixed acidity: <p><strong> 0<x<16 </strong></p>
+2- Volatile acidity: <p><strong> 0<x<1.6 </strong></p>
+3- Citric acid concentration: <p><strong> 0<x<1 </strong></p> 
+4- Residual sugar: <p><strong> 0<x<16 </strong></p>
+5- Amount of chlorides: <p><strong> 0<x<0.6 </strong></p>
+6- Total amount of sulfur dioxide: <p><strong> 0<x<75 </strong></p>
+7- Solution density: <p><strong> 0<x<300 </strong></p>
+8- Solution pH: <p><strong> 2.6<x<4.2 </strong></p>
+9- Amont of sulphates: <p><strong> 0.25<x<2 </strong></p>
+10- Alcohol grade: <p><strong> 8<x<15.2 </strong></p>
