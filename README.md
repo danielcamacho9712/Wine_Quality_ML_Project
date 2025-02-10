@@ -93,6 +93,44 @@ In <strong>Table 1</strong>, it can be observed that the best-performing model w
 
 A grid was made with several hyperparameter of the model and then used the RandomizedSearchCV function inside of sklearn library to found the best set of hyperparameters regarding to accuracy metrics. 
 
+```python
+# Number of trees in the forest
+n_estimators = [int(x) for x in np.linspace(start=100, stop=200, num=11)]
+# How to compute the quality of split
+criterion = ['gini', 'entropy']
+# Number of features to consider at every split
+max_features = ['sqrt', 'log2']
+# Maximum number of levels in tree
+max_depth = [2, 4, 8, 10, 12]
+max_depth.append(None)
+# Minimum number of samples required to split a node
+min_samples_split = [2, 4, 8, 16, 32]
+# Minimum number of samples required at each leaf node
+min_samples_leaf = [1, 2, 4, 10, 20]
+# Method of selecting samples for training each tree
+bootstrap = [True, False]
+
+random_grid = {'n_estimators': n_estimators,
+               'criterion': criterion,
+               'max_features': max_features,
+               'max_depth': max_depth,
+               'min_samples_split': min_samples_split, 
+               'min_samples_leaf': min_samples_leaf, 
+               'bootstrap': bootstrap
+               }
+
+from sklearn.model_selection import RandomizedSearchCV
+
+rf = RandomForestClassifier(random_state=42)
+
+# Random search
+random_search = RandomizedSearchCV(rf, param_distributions=random_grid, n_iter=20, cv=5, n_jobs=-1, scoring='accuracy', random_state=42)
+random_search.fit(X_train, y_train)
+
+forest_opt = RandomForestClassifier(**random_search.best_params_)
+
+```
+
 |Metrics   |Random Forest optimized|Random Forest|
 |----------|-----------------------|-------------|
 |Accuracy  |0.790625               |0.809375     |
@@ -102,9 +140,5 @@ A grid was made with several hyperparameter of the model and then used the Rando
 
 <p><strong>Table 2.</strong> Optimized and non-optimized hyperparameters Random Forest performance
 
-```python
-print(f'Accuracy: {accuracy_score(y_test, y_pred_opt)}')
-print(f'Precision: {precision_score(y_test, y_pred_opt)}')
-print(f'Recall: {recall_score(y_test, y_pred_opt)}')
-print(f'f1-score: {f1_score(y_test, y_pred_opt)}')
-comparision_table
+
+
