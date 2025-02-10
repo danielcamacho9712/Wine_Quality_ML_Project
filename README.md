@@ -49,9 +49,11 @@ For this reason the features  <strong>[fixed acidity, residual sugar, free sulfu
 
 ## 3. Benchamark model
 
-A <strong>DecisionTreeClassifier</strong> was the model selected to train using the dataset. We import the model from the ML-library sklearn, after this we split the data into training and testing set, we set the size of the testing set using the hyperparameter <strong>test_size=0.2</strong>. The model was trained, accuracy metrics and a confusion matrix were used to determine the model's perfomance.
+A <strong>DecisionTreeClassifier</strong> was the model selected to train using the dataset. We import the model from the ML-library sklearn, after this we split the data into training and testing set, we set the size of the testing set using the hyperparameter <strong>test_size=0.2</strong>. The model was trained, accuracy metrics and a confusion matrix were used to determine the model's perfomance. The accuracy of the benchmark model was <strong>accuracy=0.725</strong> and the confusion matrix is presented in the following figure:
 
 <div align="center">
   <img src="Images/benchmark_performance.png" alt="Screenshot2">
 </div>
-<p><strong>Figure 2.</strong> Benchmark Model Performance
+<p><strong>Figure 3.</strong> Benchmark Model Performance
+
+This performance is really good for as a first approach but can be improved, using feature engineering.
