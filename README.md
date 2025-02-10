@@ -20,12 +20,13 @@ The first thing that we checked in the dataset was if there was any missing or n
 
 <details>
   <summary>Click to see output of the <strong>isna().sum()</strong> </summary>
+
 <div align="center">
   <img src="Images/is_nan.png" alt="Screenshot" width="200">
 </div>
 <p><strong>Figure 1.</strong> Every Nan values in the dataset
-  <summary>Click to see output</summary>
-<details>
+
+</details>
 
 There wasn't nan values present in the dataset as was confirmed by running <strong>isna().sum()</strong>. After this we explore the data, to see if all the values were in a logical range:
 
