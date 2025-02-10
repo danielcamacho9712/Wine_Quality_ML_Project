@@ -78,11 +78,16 @@ In this section three models were selected to train and compare their perfomance
 </div>
 <p><strong>Figure 5.</strong> Confusion Matrices for the three selected models. 
 
-In Figure 6, it can be observed that the best-performing model was Random Forest.
+In <strong>Table 1</strong>, it can be observed that the best-performing model was Random Forest.
 
 |Metrics   |Decision Tree|Random Forest|Gradient Boosting|
 |----------|-------------|-------------|-----------------|
-|Accuracy  |0.737500     |0.809375     |0.734375 |
+|Accuracy  |0.737500     |0.809375     |0.734375         |
 |Precision |0.787879		 |0.847059     |0.770115         |
 |Recall    |0.726257		 |0.804469     |0.748603         |
 |F1-score  |0.755814		 |0.825215     |0.759207         |
+
+<p><strong>Table 1.</strong> Three models metrics comparision
+
+## 6. Random Forest Hyperparameters Tuning 
+
