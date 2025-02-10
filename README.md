@@ -91,3 +91,13 @@ In <strong>Table 1</strong>, it can be observed that the best-performing model w
 
 ## 6. Random Forest Hyperparameters Tuning 
 
+A grid was made with several hyperparameter of the model and then used the RandomizedSearchCV function inside of sklearn library to found the best set of hyperparameters regarding to accuracy metrics. 
+
+|Metrics   |Random Forest optimized|Random Forest|
+|----------|-----------------------|-------------|
+|Accuracy  |0.790625               |0.809375     |
+|Precision |0.829412		           |0.847059     |
+|Recall    |0.787709		           |0.804469     |
+|F1-score  |0.808023		           |0.825215     |
+
+<p><strong>Table 2.</strong> Optimized and non-optimized hyperparameters Random Forest performance
