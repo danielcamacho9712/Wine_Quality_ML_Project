@@ -101,3 +101,10 @@ A grid was made with several hyperparameter of the model and then used the Rando
 |F1-score  |0.808023		           |0.825215     |
 
 <p><strong>Table 2.</strong> Optimized and non-optimized hyperparameters Random Forest performance
+
+```python
+print(f'Accuracy: {accuracy_score(y_test, y_pred_opt)}')
+print(f'Precision: {precision_score(y_test, y_pred_opt)}')
+print(f'Recall: {recall_score(y_test, y_pred_opt)}')
+print(f'f1-score: {f1_score(y_test, y_pred_opt)}')
+comparision_table
