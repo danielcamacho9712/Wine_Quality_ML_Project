@@ -63,6 +63,17 @@ The DecisionTreeClassifier performed well in solving this classification problem
 A correlation feature matrix was used to analyze the relationship between input features and output classes. A threshold of 0.2 was set, and all features with a correlation above this value with wine quality were selected for retraining the model. 
 
 <div align="center">
-  <img src="Images/features_selection.png" alt="Screenshot2">
+  <img src="Images/features_selection.png" alt="Screenshot3">
 </div>
-<p><strong>Figure 3.</strong> Correlation Matrix 
+<p><strong>Figure 4.</strong> Correlation Feature Matrix 
+
+After this selection process, the input features selected were <strong>[volatile acidity, sulphates, total sulfur dioxide_scaled, alcohol_scaled]</strong>.
+
+## 5. Model Training 
+
+In this section three models were selected to train and compare their perfomance based in <strong>accuracy, precision, recall and f1-score metrics</strong>. The models selected were <strong> Decision Tree, Random Forest and Gradient Boosting </strong>. In the next figure are shown the confusion matrix for these three models:
+
+<div align="center">
+  <img src="Images/3_models.png" alt="Screenshot4">
+</div>
+<p><strong>Figure 5.</strong> Confusion Matrices for the three selected models. 
