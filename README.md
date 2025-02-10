@@ -57,3 +57,12 @@ A <strong>DecisionTreeClassifier</strong> was the model selected to train using 
 <p><strong>Figure 3.</strong> Benchmark Model Performance
 
 The DecisionTreeClassifier performed well in solving this classification problem. However, its performance can be further enhanced through feature engineering and by experimenting with other models that may better fit our data. 
+
+## 4. Feature Engineering
+
+A correlation feature matrix was used to analyze the relationship between input features and output classes. A threshold of 0.2 was set, and all features with a correlation above this value with wine quality were selected for retraining the model. 
+
+<div align="center">
+  <img src="Images/features_selection.png" alt="Screenshot2">
+</div>
+<p><strong>Figure 3.</strong> Correlation Matrix 
