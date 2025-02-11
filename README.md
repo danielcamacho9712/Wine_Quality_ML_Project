@@ -1,5 +1,8 @@
 # Wine Quality Project
 
+You can find the dataset:
+*https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009*
+
 ## 1. Introduction
 <p align="justify">
 This is a set with the compilation of several chemicals parameters related with the wine quality. We are going to use this dataset to predict if the wine is a good quality wine or not, using parameters like:
